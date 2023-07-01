@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>WebTVPrime</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <style>
     /* CSS styles for your website */
-    body {
+    body { 
+      text-transform: uppercase;
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
@@ -24,24 +25,19 @@
   align-items: center;
 }
 
-.logo-and-name {
-  display: flex;
-  align-items: center;
-}
+  .logo-and-name {
+    display: flex;
+    align-items: center;
+  }
 
-.logo {
-  width: 50px;
-  height: 50px;
-  background-image: url('logo-background.jpg');
-  background-size: cover;
-  background-position: center;
-  margin-right: 10px;
-  padding: 5px;
-}
+  .logo {
+    width: 50px;
+    height: 50px;
+    background-color: #000000;
+    margin-right: 10px;
+    
+  }
 
-.website-name {
-  font-size: 24px;
-}
 
 .menu {
   text-align: right;
@@ -237,13 +233,41 @@
   color: #fff;
   margin-right: 10px;
 }
+    /* Media Queries */
+    @media only screen and (max-width: 768px) {
+      /* Adjust the styles for smaller screens */
+      .logo-and-name {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .logo {
+        margin-bottom: 10px;
+      }
+
+      .menu {
+        margin-top: 10px;
+      }
+
+      .menu ul li {
+        margin-left: 10px;
+      }
+
+      main {
+        padding: 20px;
+      }
+
+      .subscription-card {
+        width: 100%;
+        max-width: 400px;
+      }
+    }
 
   </style>
 </head>
 <body>
   <header>
     <div class="logo"></div>
-    <h1 class="website-name"><a href="index.html">WebTVPrime</a></h1> 
          
   <nav class="menu">
     <ul>
@@ -295,7 +319,7 @@
         </div>
         <div class="subscription-card">
           <h3>Free Trial</h3>
-          <p>24h free.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           <a href="#" class="subscribe-btn">Subscribe</a>
         </div>
       </div>
