@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WebTVPrime</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    /* CSS styles for your website */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('background.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* Header styles */
+    header {
+  background-color: #0d47a1; /* Dark Blue */
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-and-name {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  background-image: url('logo-background.jpg');
+  background-size: cover;
+  background-position: center;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.website-name {
+  font-size: 24px;
+}
+
+.menu {
+  text-align: right;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.menu ul li {
+  margin-left: 20px;
+}
+
+.menu ul li:first-child {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu ul li a:hover {
+  color: #bbdefb; /* Light Blue */
+}
+
+
+    main {
+      text-align: center;
+      padding: 40px;
+    }
+
+    /* Slideshow styles */
+    .slideshow-container {
+      max-width: 100%;
+      position: relative;
+      margin: 0 auto;
+    }
+
+    .slideshow-slide {
+      display: none;
+    }
+
+    .slideshow-slide img {
+      width: 100%;
+      height: auto;
+    }
+
+.slide-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #0d47a1;
+}
+
+.slide-text h3 {
+  font-size: 24px;
+}
+
+.slide-text p {
+  font-size: 16px;
+}
+
+    /* Subscription plans styles */
+    .subscription-plans {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px; /* Add margin-bottom for spacing */
+}
+
+.slideshow-container {
+  margin-bottom: 40px; /* Add margin-bottom for spacing */
+}
+
+    .subscription-card {
+  width: 300px;
+  height: 400px; /* Set a fixed height for all cards */
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add box-shadow for depth effect */
+}
+
+
+    .subscription-card h3 {
+      color: #0d47a1; /* Dark Blue */
+      margin-top: 0;
+    }
+
+    .subscription-card p {
+      margin-bottom: 20px;
+    }
+
+    .subscription-card .subscribe-btn {
+      display: block;
+      background-color: #0d47a1; /* Dark Blue */
+      color: #fff;
+      text-align: center;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .subscription-card .subscribe-btn:hover {
+      background-color: #1565c0; /* Light Blue */
+    }
+
+    /* Usage guide styles */
+    /* Usage guide styles */
+/* Usage guide styles */
+.usage-guide {
+  text-align: center;
+}
+
+/* Usage guide styles */
+.usage-guide {
+  text-align: center;
+}
+
+.usage-guide h2 {
+  margin-bottom: 20px;
+}
+
+.usage-guide-steps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.usage-guide-step {
+  flex: 1 0 33%; /* Adjust the width of each step as desired */
+  max-width: 300px; /* Set a maximum width for each step */
+  background-color: #fff; /* Set the desired background color for each step */
+  border-radius: 5px; /* Set the desired border radius for each step */
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.usage-guide-step .step-icon {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #0d47a1; /* Dark Blue */
+}
+
+.usage-guide-step p {
+  margin: 0;
+}
+
+    /* Footer styles */
+    footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000; /* Black */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+}
+
+.social-media a {
+  color: #fff;
+  margin-right: 10px;
+}
+
+.payment-methods {
+  display: flex;
+  align-items: center;
+}
+
+.payment-methods i {
+  color: #fff;
+  margin-right: 10px;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"></div>
+    <h1 class="website-name"><a href="index.html">WebTVPrime</a></h1> 
+         
+  <nav class="menu">
+    <ul>
+      <li><a href="#about-us">About Us</a></li>
+      <li><a href="#contact-us">Contact Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  </header>
+
+  <main>
+   <section class="slideshow-container">
+  <div class="slideshow-slide">
+    <img src="slide1.jpg" alt="Slide 1">
+  </div>
+  <div class="slideshow-slide">
+    <img src="slide2.jpg" alt="Slide 2">
+    
+  </div>
+  <div class="slideshow-slide">
+    <img src="slide3.jpg" alt="Slide 3">
+    
+  </div>
+</section>
+    <section>
+      <h2>Our Plans</h2>
+      <div class="subscription-plans">
+        <div class="subscription-card">
+          <h3>Basic Plan</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="#" class="subscribe-btn">Subscribe</a>
+        </div>
+        <div class="subscription-card">
+          <h3>Standard Plan</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="#" class="subscribe-btn">Subscribe</a>
+        </div>
+        <div class="subscription-card">
+          <h3>Premium Plan</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="#" class="subscribe-btn">Subscribe</a>
+        </div>
+        <div class="subscription-card">
+          <h3>Ultra Plan</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="#" class="subscribe-btn">Subscribe</a>
+        </div>
+        <div class="subscription-card">
+          <h3>Free Trial</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="#" class="subscribe-btn">Subscribe</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="usage-guide">
+  <h2>How to Use Our Services</h2>
+  <div class="usage-guide-steps">
+    <div class="usage-guide-step">
+      <span class="step-icon">1</span>
+      <p>Step 1: Search for your favorite shows and movies.</p>
+    </div>
+    <div class="usage-guide-step">
+      <span class="step-icon">2</span>
+      <p>Step 2: Click to start watching.</p>
+    </div>
+    <div class="usage-guide-step">
+      <span class="step-icon">3</span>
+      <p>Step 3: Enjoy your favorite content hassle-free.</p>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+      <footer>
+  <div class="social-media">
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-whatsapp"></i></a>
+  </div>
+  <div class="payment-methods">
+    <i class="fab fa-cc-visa"></i>
+    <i class="fab fa-cc-mastercard"></i>
+    <i class="fab fa-cc-amex"></i>
+    <i class="fab fa-cc-paypal"></i>
+  </div>
+  <p>&copy; 2023 WebTVPrime. All rights reserved.</p>
+    </footer>
+</body>
+<script>
+    // Slideshow script
+    let slideIndex = 0;
+    const slides = document.getElementsByClassName('slideshow-slide');
+
+    function showSlides() {
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      slides[slideIndex - 1].style.display = 'block';
+      setTimeout(showSlides, 2000); // Change slide every 2 seconds
+    }
+
+    showSlides();
+  </script
+</html>
