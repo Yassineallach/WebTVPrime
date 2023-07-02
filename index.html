@@ -5,7 +5,61 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <style>
     /* CSS styles for your website */
+    
+  #selected-plan {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+  }
+
+    
+    .popup-form {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+.popup-form h3 {
+  margin-top: 0;
+}
+
+.popup-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-form label {
+  margin-bottom: 5px;
+}
+
+.popup-form input,
+.popup-form button {
+  margin-bottom: 10px;
+}
+
+.popup-form input[type="text"],
+.popup-form input[type="email"] {
+  padding: 5px;
+}
+
+.popup-form button {
+  background-color: #0d47a1;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
     body { 
+        margin-top: 70px;
       text-transform: uppercase;
       font-family: Arial, sans-serif;
       margin: 0;
@@ -17,6 +71,10 @@
 
     /* Header styles */
     header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
   background-color: #0d47a1; /* Dark Blue */
   color: #fff;
   padding: 20px;
@@ -72,7 +130,8 @@
 
     main {
       text-align: center;
-      padding: 40px;
+      padding: 0 40px;
+      margin-top: 50px; /* Adjust the margin-top value to create desired spacing */ padding: 40px;
     }
 
     /* Slideshow styles */
@@ -121,8 +180,8 @@
 }
 
     .subscription-card {
-  width: 300px;
-  height: 400px; /* Set a fixed height for all cards */
+  width: 200px;
+  height: 700px; /* Set a fixed height for all cards */
   background-color: #fff;
   border-radius: 5px;
   padding: 20px;
@@ -234,37 +293,41 @@
   margin-right: 10px;
 }
     /* Media Queries */
-    @media only screen and (max-width: 768px) {
-      /* Adjust the styles for smaller screens */
-      .logo-and-name {
-        flex-direction: column;
-        align-items: flex-start;
+    
+    /* Styles for small screens (up to 600px) */
+    @media (max-width: 600px) {
+      /* Adjust the styles for small screens */
+      body {
+        font-size: 14px;
       }
 
-      .logo {
-        margin-bottom: 10px;
-      }
-
-      .menu {
-        margin-top: 10px;
-      }
-
-      .menu ul li {
-        margin-left: 10px;
-      }
-
-      main {
-        padding: 20px;
-      }
-
-      .subscription-card {
-        width: 100%;
-        max-width: 400px;
-      }
+      /* Example: Reduce font size */
     }
+
+    /* Styles for medium screens (601px to 900px) */
+    @media (min-width: 601px) and (max-width: 900px) {
+      /* Adjust the styles for medium screens */
+      body {
+        font-size: 16px;
+      }
+
+      /* Example: Increase font size */
+    }
+
+    /* Styles for large screens (901px and above) */
+    @media (min-width: 901px) {
+      /* Adjust the styles for large screens */
+      body {
+        font-size: 18px;
+      }
+
+      /* Example: Further increase font size */
+    }
+ 
 
   </style>
 </head>
+
 <body>
   <header>
     <div class="logo"></div>
@@ -277,16 +340,13 @@
   </nav>
 </header>
 
-
-  </header>
-
   <main>
    <section class="slideshow-container">
   <div class="slideshow-slide">
-    <img src="slide1.jpg" alt="Slide 1">
+    <img src="file:///storage/emulated/0/Download/pngwing.com.png" alt="Slide 1">
   </div>
   <div class="slideshow-slide">
-    <img src="slide2.jpg" alt="Slide 2">
+    <img src="file:///storage/emulated/0/Download/Daco_4772733.png" alt="Slide 2">
     
   </div>
   <div class="slideshow-slide">
@@ -297,30 +357,34 @@
     <section>
       <h2>Our Plans</h2>
       <div class="subscription-plans">
-        <div class="subscription-card">
+        <div class="subscription-card" data-plan="Basic Plan">
+
           <h3>Basic Plan</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <a href="#" class="subscribe-btn">Subscribe</a>
+          <a href="#" class="subscribe-btn" data-plan="Basic Plan" >Subscribe</a>
         </div>
-        <div class="subscription-card">
+        <div class="subscription-card" data-plan="Standard Plan"> 
+
           <h3>Standard Plan</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <a href="#" class="subscribe-btn">Subscribe</a>
+          <a href="#" class="subscribe-btn" data-plan="Standard Plan" >Subscribe</a>
         </div>
-        <div class="subscription-card">
+        <div class="subscription-card" data-plan="Premium Plan"> 
+
           <h3>Premium Plan</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <a href="#" class="subscribe-btn">Subscribe</a>
+          <a href="#" class="subscribe-btn" data-plan="premium Plan" >Subscribe</a>
         </div>
-        <div class="subscription-card">
+        <div class="subscription-card" data-plan="Ultra Plan"> 
+
           <h3>Ultra Plan</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <a href="#" class="subscribe-btn">Subscribe</a>
+          <a href="#" class="subscribe-btn" data-plan="Ultra Plan" >Subscribe</a>
         </div>
-        <div class="subscription-card">
+        <div class="subscription-card" data-plan="Free trial Plan"> 
           <h3>Free Trial</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <a href="#" class="subscribe-btn">Subscribe</a>
+          <a href="#" class="subscribe-btn" data-plan="free trial Plan">Subscribe</a>
         </div>
       </div>
     </section>
@@ -360,6 +424,84 @@
   </div>
   <p>&copy; 2023 WebTVPrime. All rights reserved.</p>
     </footer>
+    <div id="popup-form" class="popup-form">
+  <h3>Subscribe</h3>
+  <form id="subscription-form">
+    <label for="selected-plan">you choose:</label>
+    <input type="text" id="selected-plan" class="selected-plan" readonly required>
+  
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+  
+    <button type="submit">Submit</button>
+    <button type="button" id="close-btn">Close</button>
+  </form>
+</div>
+
+<script>
+  const subscriptionForm = document.getElementById('subscription-form');
+  const selectedPlanInput = document.getElementById('selected-plan');
+  const closeButton = document.getElementById('close-btn');
+  
+  const subscriptionButtons = document.querySelectorAll('.subscribe-btn');
+  
+  subscriptionButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const selectedPlan = button.getAttribute('data-plan');
+      selectedPlanInput.value = selectedPlan;
+    });
+  });
+  
+  subscriptionForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    // Perform form validation and submission logic here
+    // ...
+
+    // Redirect to the payment gateway
+    window.location.href = 'https://examplepaymentgateway.com'; // Replace with your payment gateway URL
+  });
+
+  closeButton.addEventListener('click', () => {
+    // Close the pop-up or perform any other desired action
+    // ...
+  });
+</script>
+
+  const subscriptionForm = document.getElementById('subscription-form');
+  const selectedPlanInput = document.getElementById('selected-plan');
+  const closeButton = document.getElementById('close-btn');
+  
+  const subscriptionButtons = document.querySelectorAll('.subscription-card');
+  
+  subscriptionButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const selectedPlan = button.getAttribute('data-plan');
+      selectedPlanInput.value = selectedPlan;
+    });
+  });
+  
+  subscriptionForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    // Perform form validation and submission logic here
+    // ...
+
+    // Redirect to the payment gateway
+    window.location.href = 'https://examplepaymentgateway.com'; // Replace with your payment gateway URL
+  });
+
+  closeButton.addEventListener('click', () => {
+    // Close the pop-up or perform any other desired action
+    // ...
+  });
+</script>
+
+
+
 </body>
 <script>
     // Slideshow script
@@ -375,9 +517,43 @@
         slideIndex = 1;
       }
       slides[slideIndex - 1].style.display = 'block';
-      setTimeout(showSlides, 2000); // Change slide every 2 seconds
+      setTimeout(showSlides, 10000); // Change slide every 2 seconds
     }
 
     showSlides();
-  </script
+            
+  document.addEventListener('DOMContentLoaded', function() {
+  
+  // Add click event listener to subscription cards
+  const subscriptionCards = document.getElementsByClassName('subscribe-btn');
+  for (let i = 0; i < subscriptionCards.length; i++) {
+    subscriptionCards[i].addEventListener('click', showPopupForm);
+  }
+
+  // Function to handle the pop-up form display
+  function showPopupForm(event) {
+  const subscriptionCard = event.target.closest('.subscribe-btn');
+  if (subscriptionCard) {
+    const selectedPlan = subscriptionCard.dataset.plan;
+    document.getElementById('selected-plan').textContent = selectedPlan;
+    const popupForm = document.getElementById('popup-form');
+    popupForm.style.display = 'block';
+    document.body.style.pointerEvents = 'none';
+    popupForm.style.pointerEvents = 'auto';
+  }
+}
+
+
+  // Close the pop-up form
+  const closeBtn = document.getElementById('close-btn');
+  closeBtn.addEventListener('click', closePopupForm);
+
+  function closePopupForm() {
+    const popupForm = document.getElementById('popup-form');
+    popupForm.style.display = 'none';
+    document.body.style.pointerEvents = 'auto';
+  }
+});
+
+</script>
 </html>
