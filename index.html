@@ -1,63 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0&appId={595491506057459}&autoLogAppEvents=1" nonce="abcdefghijklmnop"></script>
+
   <title>WebTVPrime</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <style>
     /* CSS styles for your website */
     
-  #selected-plan {
-    margin-top: 10px;
-    font-weight: bold;
-    color: #333;
-  }
-
-    
-    .popup-form {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  z-index: 9999;
-}
-
-.popup-form h3 {
-  margin-top: 0;
-}
-
-.popup-form form {
-  display: flex;
-  flex-direction: column;
-}
-
-.popup-form label {
-  margin-bottom: 5px;
-}
-
-.popup-form input,
-.popup-form button {
-  margin-bottom: 10px;
-}
-
-.popup-form input[type="text"],
-.popup-form input[type="email"] {
-  padding: 5px;
-}
-
-.popup-form button {
-  background-color: #0d47a1;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
+  
     body { 
         margin-top: 70px;
       text-transform: uppercase;
@@ -71,7 +22,7 @@
 
     /* Header styles */
     header {
-      position: fixed;
+      position: static;
       top: 0;
       left: 0;
       right: 0;
@@ -178,6 +129,7 @@
 .slideshow-container {
   margin-bottom: 40px; /* Add margin-bottom for spacing */
 }
+
 
     .subscription-card {
   width: 200px;
@@ -357,35 +309,56 @@
     <section>
       <h2>Our Plans</h2>
       <div class="subscription-plans">
-        <div class="subscription-card" data-plan="Basic Plan">
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>WebTVPrime</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    /* CSS styles for your website */
+    
+    /* ... (existing CSS styles) ... */
+  </style>
+</head>
 
-          <h3>Basic Plan</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <a href="#" class="subscribe-btn">Subscribe</a>
-        </div>
-        <div class="subscription-card" data-plan="Standard Plan"> 
+<body>
+  <!-- ... (existing HTML code) ... -->
 
-          <h3>Standard Plan</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <a href="#" class="subscribe-btn">Subscribe</a>
-        </div>
-        <div class="subscription-card" data-plan="Premium Plan"> 
+  <div class="subscription-card">
+    <h3>Basic Plan</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <a href="payment-gateway1-link" class="subscribe-btn">Buy Now</a>
+  </div>
+  
+  <div class="subscription-card">
+    <h3>Standard Plan</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <a href="payment-gateway2-link" class="subscribe-btn">Buy Now</a>
+  </div>
+  
+  <div class="subscription-card">
+    <h3>Premium Plan</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <a href="payment-gateway3-link" class="subscribe-btn">Buy Now</a>
+  </div>
+  
+  <div class="subscription-card">
+    <h3>Ultra Plan</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <a href="payment-gateway4-link" class="subscribe-btn">Buy Now</a>
+  </div>
+  
+  <div class="subscription-card">
+    <h3>Free Trial</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <a href="payment-gateway5-link" class="subscribe-btn">Buy Now</a>
+  </div>
 
-          <h3>Premium Plan</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <a href="#" class="subscribe-btn">Subscribe</a>
-        </div>
-        <div class="subscription-card" data-plan="Ultra Plan"> 
+  <!-- ... (existing JavaScript code) ... -->
+</body>
+</html>
 
-          <h3>Ultra Plan</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <a href="#" class="subscribe-btn">Subscribe</a>
-        </div>
-        <div class="subscription-card" data-plan="Free trial Plan"> 
-          <h3>Free Trial</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <a href="#" class="subscribe-btn">Subscribe</a>
-        </div>
+
       </div>
     </section>
 
@@ -407,6 +380,97 @@
   </div>
 </section>
 
+  
+  
+  <style>
+    /* CSS styles for your website */
+
+    /* ... (existing CSS styles) ... */
+
+    .customer-reviews {
+      background-color: #f9f9f9;
+      padding: 40px 0;
+    }
+
+    .customer-review {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      max-width: 400px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .customer-review img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .customer-review h3 {
+      margin-bottom: 10px;
+    }
+
+    .customer-review p {
+      font-style: italic;
+      color: #888;
+    }
+
+    .review-form {
+      max-width: 400px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .review-form label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .review-form input,
+    .review-form textarea {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 20px;
+    }
+
+    .review-form button {
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  </style>
+
+  <section class="customer-reviews">
+    <h2>Customer Reviews</h2>
+    <div class="fb-comments" data-href="https://yassineallach.github.io/WebTVPrime/" data-numposts="5" data-width=""></div>
+
+    <div class="customer-review">
+      <h3>John Doe</h3>
+      <p>"WebTVPrime is the best streaming service I've ever used. The content library is extensive, and the video quality is top-notch. Highly recommended!"</p>
+    </div>
+    
+    <div class="customer-review">
+      <h3>Jane Smith</h3>
+      <p>"I've been a subscriber to WebTVPrime for a year now, and I'm impressed with the selection of movies and TV shows available. The service is reliable, and the streaming experience is fantastic."</p>
+    </div>
+    
+    <div class="customer-review">
+      <h3>Michael Johnson</h3>
+      <p>"WebTVPrime has changed the way I watch movies and TV shows. The user-friendly interface and personalized recommendations make it easy to discover new content. I'm loving it!"</p>
+    </div>
+
+    
+  </section>
+
+  
+
+  
+
   </main>
 
       <footer>
@@ -424,38 +488,10 @@
   </div>
   <p>&copy; 2023 WebTVPrime. All rights reserved.</p>
     </footer>
-    <div id="popup-form" class="popup-form">
-  <h3>Subscribe</h3>
-  <form>
-  <label for="selected-plan">Your Plan:</label>
-  <input type="text" id="selected-plan" class="selected-plan" required>
-  
-  <label for="name">Name:</label>
-  <input type="text" id="name" name="name" required>
-  
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email" required>
-  
-  <button type="submit">Submit</button>
-  <button type="button" id="close-btn">Close</button>
-</form>
-
-<script>
-  const subscriptionButtons = document.querySelectorAll('.subscription-card');
-  const selectedPlanInput = document.getElementById('selected-plan');
-  
-  subscriptionButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      const selectedPlan = button.getAttribute('data-plan');
-      selectedPlanInput.value = selectedPlan;
-    });
-  });
-</script>
-
-</div>
+   
 
 
-</body>
+
 <script>
     // Slideshow script
     let slideIndex = 0;
@@ -475,38 +511,8 @@
 
     showSlides();
             
-  document.addEventListener('DOMContentLoaded', function() {
-  
-  // Add click event listener to subscription cards
-  const subscriptionCards = document.getElementsByClassName('subscription-card');
-  for (let i = 0; i < subscriptionCards.length; i++) {
-    subscriptionCards[i].addEventListener('click', showPopupForm);
-  }
-
-  // Function to handle the pop-up form display
-  function showPopupForm(event) {
-  const subscriptionCard = event.target.closest('.subscribe-btn');
-  if (subscriptionCard) {
-    const selectedPlan = subscriptionCard.dataset.plan;
-    document.getElementById('selected-plan').textContent = selectedPlan;
-    const popupForm = document.getElementById('popup-form');
-    popupForm.style.display = 'block';
-    document.body.style.pointerEvents = 'none';
-    popupForm.style.pointerEvents = 'auto';
-  }
-}
-
-
-  // Close the pop-up form
-  const closeBtn = document.getElementById('close-btn');
-  closeBtn.addEventListener('click', closePopupForm);
-
-  function closePopupForm() {
-    const popupForm = document.getElementById('popup-form');
-    popupForm.style.display = 'none';
-    document.body.style.pointerEvents = 'auto';
-  }
-});
+ 
 
 </script>
+</body>
 </html>
