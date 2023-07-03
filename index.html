@@ -447,9 +447,26 @@
 
   <section class="customer-reviews">
     <h2>Customer Reviews</h2>
-    <div class="fb-comments" data-href="https://yassineallach.github.io/WebTVPrime/" data-numposts="5" data-width=""></div>
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v11.0" nonce="YOUR_NONCE_VALUE"></script>
 
-    
+<div class="fb-comments" data-href="https://yassineallach.github.io/WebTVPrime/" data-width="500" data-numposts="5"></div>
+
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v11.0" nonce="YOUR_NONCE_VALUE"></script>
+
+<div class="fb-comments" data-href="YOUR_WEBSITE_URL" data-width="500" data-numposts="5"></div>
+<button onclick="loadMoreComments()">See More</button>
+
+<script>
+  function loadMoreComments() {
+    var commentsContainer = document.querySelector('.fb-comments');
+    var numPosts = parseInt(commentsContainer.getAttribute('data-numposts'));
+    commentsContainer.setAttribute('data-numposts', (numPosts + 5).toString());
+    FB.XFBML.parse(commentsContainer);
+  }
+</script>
+
     
   </section>
 
