@@ -1,739 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta name="description" content="WebTVPrime offers a comprehensive IPTV service that brings the world of entertainment to your fingertips. Enjoy a wide selection of channels, including movies, TV shows, sports, and more, all streamed directly to your device. With WebTVPrime, experience immediate activation, enhanced security for your purchases, and round-the-clock fast support. Access over 54,000 channels worldwide and enjoy the guarantee of a refund. Discover a new level of entertainment with WebTVPrime and start streaming your favorite content today.">
-
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0&appId={595491506057459}&autoLogAppEvents=1" nonce="abcdefghijklmnop"></script> 
-
-  <title>WebTVPrime</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <style>
-    /* CSS styles for your website */
-    
-  
-    body { 
-        margin-top: 70px;
-      text-transform: uppercase;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      
-  background: linear-gradient(to bottom, #ffffff, #f0f0f0);
-
-
-      background-image: url('background.jpg');
-      
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
-    /* Header styles */
-    header {
-  background-color: #f8f8f8;
-  padding: 10px;
-}
-
-.logo img {
-  height: 50px;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-nav ul li a {
-  color: #333;
-  text-decoration: none;
-  padding: 5px;
-}
-
-nav ul li a:hover {
-  color: #000;
-  background-color: #ddd;
-}
-
-    
-  
-    
-  
-  
- 
-
-
-
-
-
-
-
-
-    main {
-      text-align: center;
-      
-      margin-top: -30px; /* Adjust the margin-top value to create desired spacing */ padding: 40px;
-      
-    }
-
-    /* Slideshow styles */
-    .slideshow-container {
-      max-width: 100%;
-      position: relative;
-      margin: 0 auto;
-    }
-
-    .slideshow-slide {
-      display: none;
-      
-    }
-
-    .slideshow-slide img {
-      
-  display: block;
-  max-width: 100%;
-  height: auto;
-  
-
-      
-    }
-    
-
-
-.slideshow-text {
-  position: absolute;
-  top: 20%;
-  left: -5%;
-  transform: translateY(-50%);
-  padding: 20px;
-  color: #8098ff;
-  text-align: left;
-  width: 70%;
-  font-size: 30px; /* Default font size */
-  
-  
-}
-@media (max-width: 768px) {
-
-  .slideshow-text {
-  transform: translate(-50%, -50%);
-  position: absolute;
-  top: 20%;
-  left: 40%;
-  
-  
-    font-size: 20px; /* Font size for smaller screens */
-  }
-}
-
-@media (max-width: 480px) {
-  .slideshow-text {
-    font-size: 3px; /* Font size for even smaller screens */
-  }
-}
-
-.slideshow-text h2 {
-  font-weight: bold;
-  margin-bottom: 10px;
-  width: 100%;
-  font-size: 30px; /* Default font size */
-
-}
-@media (max-width: 768px) {
-  .slideshow-text h2 {
-     position: absolute;
-     top: 5%;
-     left: -20px;
-    font-size: 20px; /* Font size for smaller screens */
-  }
-}
-
-@media (max-width: 480px) {
-  .slideshow-text h2 {
-  
-    font-size: 10px; /* Font size for even smaller screens */
-  }
-}
-      .slideshow-text .btn {
-  /* Default styles for the button */
-  background-color: #ff5500;
-  color: #ffffff;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 4px;
-  position: absolute;
-  top: 110%;
-  left: 15%;
-  transform: translate(-50%, -50%);
- 
-}
-
-/* Media query for screens smaller than 600px */
-@media (max-width: 600px) {
-  .slideshow-text .btn {
-  position: absolute;
-  top: 180%;
-  left: 15%;
-  transform: translate(-50%, -50%);
-    /* Adjusted styles for smaller screens */
-    font-size: 14px;
-    padding: 8px 16px;
-  }
-}
-
-/* Media query for screens smaller than 400px */
-@media (max-width: 400px) {
-  .slideshow-text .btn {
-  
-    /* Further adjusted styles for even smaller screens */
-    font-size: 12px;
-    padding: 6px 12px;
-  }
-}
-
-
-
-
-/* Adjust the colors, fonts, and other styles as needed */
-
-
-    /* Subscription plans styles */
-    .subscription-plans {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-bottom: 40px; /* Add margin-bottom for spacing */
-}
-
-.slideshow-container {
-  margin-bottom: 40px; /* Add margin-bottom for spacing */
-}
-
-
-    .subscription-card {
-  width: 200px;
-  height: 700px; /* Set a fixed height for all cards */
-  background-color: #fff;
-  border-radius: 5px;
-  padding: 20px;
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add box-shadow for depth effect */
-}
-
-
-    .subscription-card h3 {
-      color: #0d47a1; /* Dark Blue */
-      margin-top: 0;
-    }
-
-    .subscription-card p {
-      margin-bottom: 20px;
-    }
-
-    .subscription-card .subscribe-btn {
-      display: block;
-      background-color: #0d47a1; /* Dark Blue */
-      color: #fff;
-      text-align: center;
-      padding: 10px 20px;
-      border-radius: 5px;
-      text-decoration: none;
-      transition: background-color 0.3s ease-in-out;
-    }
-
-    .subscription-card .subscribe-btn:hover {
-      background-color: #1565c0; /* Light Blue */
-    }
-    .container {
-  /* Your existing styles for the container */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-    .why-us {
-  
-}
-
-.why-us h2 {
-  font-size: 50px;
-  margin-bottom: 40px;
-}
-
-.reasons {
-  display: flex;
-  justify-content: space-around;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  justify-items: center;
-}
-
-.reason {
-  max-width: 300px;
-}
-
-.reason i {
-  font-size: 48px;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.reason h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.reason p {
-  font-size: 16px;
-  color: #777;
-}
-       
-       @media screen and (max-width: 767px) {
-  /* Styles for small screens */
-  .reasons {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  /* Styles for medium screens */
-  .reasons {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  /* Styles for large screens */
-  .reasons {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
-}
-
-/* Add additional media queries as needed for specific breakpoints */
-
-
-
-    /* Usage guide styles */
-    /* Usage guide styles */
-/* Usage guide styles */
-.usage-guide {
-  text-align: center;
-}
-
-/* Usage guide styles */
-.usage-guide {
-  text-align: center;
-}
-
-.usage-guide h2 {
-  margin-bottom: 20px;
-}
-
-.usage-guide-steps {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-}
-
-.usage-guide-step {
-  flex: 1 0 33%; /* Adjust the width of each step as desired */
-  max-width: 300px; /* Set a maximum width for each step */
-  background-color: #fff; /* Set the desired background color for each step */
-  border-radius: 5px; /* Set the desired border radius for each step */
-  margin: 10px;
-  padding: 20px;
-  text-align: center;
-}
-
-.usage-guide-step .step-icon {
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #0d47a1; /* Dark Blue */
-}
-
-.usage-guide-step p {
-  margin: 0;
-}
-
-    /* Footer styles */
-    footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #000; /* Black */
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-.social-media-icons {
-  display: flex;
-  align-items: center;
-}
-
-.social-media-icons a {
-  color: #fff;
-  margin-right: 10px;
-}
-
-.payment-methods {
-  display: flex;
-  align-items: center;
-}
-
-.payment-methods i {
-  color: #fff;
-  margin-right: 10px;
-}
-    /* Media Queries */
-    
-    /* Styles for small screens (up to 600px) */
-    @media (max-width: 600px) {
-      /* Adjust the styles for small screens */
-      body {
-        font-size: 14px;
-      }
-
-      /* Example: Reduce font size */
-    }
-
-    /* Styles for medium screens (601px to 900px) */
-    @media (min-width: 601px) and (max-width: 900px) {
-      /* Adjust the styles for medium screens */
-      body {
-        font-size: 16px;
-      }
-
-      /* Example: Increase font size */
-    }
-
-    /* Styles for large screens (901px and above) */
-    @media (min-width: 901px) {
-      /* Adjust the styles for large screens */
-      body {
-        font-size: 18px;
-      }
-
-      /* Example: Further increase font size */
-    }
- 
-
-  </style>
+    <script src="https://www.paypal.com/sdk/js?client-id=AapbuL2NFQpr6PiXB7B_rPfFVZhbGrpS_0ScOPeiPu3br9DZok6sz5QL4yfE0JlhJc9hj9eoow3FscXQ"></script>
+
+    <title>Shopping Cart Summary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .summary {
+            margin-bottom: 20px;
+        }
+        
+        .summary-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .summary-item span {
+            font-weight: bold;
+        }
+        
+        .total {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .delivery-methods {
+            margin-bottom: 20px;
+        }
+        
+        .payment-method {
+            margin-top: 20px;
+            text-align: center;
+        }
+        
+        .checkout-button {
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
 </head>
-
 <body>
-    <header>
-  <div class="logo">
-    <img src="logo.png" alt="Website Logo">
-  </div>
-  <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
-</header>
- 
-  
-
-  <main>
-   <section class="slideshow-container">
-  <div class="slideshow-slide">
-    <img src="file:///storage/emulated/0/Download/pngwing.com.png" alt="Slide 1">
-  </div>
-  <div class="slideshow-slide">
-    <img src="file:///storage/emulated/0/Download/Daco_4772733.png" alt="Slide 2">
-    
-  </div>
-  <div class="slideshow-slide">
-    <img src="slide3.jpg" alt="Slide 3">
-    
-  </div>
-  
-  <div class="slideshow-text">
-    <h2>"Unleash the World of Entertainment: Explore Limitless Channels with		WebTVPrime"</h2>
-    
-    <a href="#our-plans" class="btn" onclick="scrollToPlans()">Subscribe Now</a>
-  </div>
-  <script>
-  function scrollToPlans() {
-  const plansSection = document.getElementById("our-plans");
-  plansSection.scrollIntoView({ behavior: "smooth" });
-}
-
-  </script>
-</section>
-     
-
-    <section class="why-us">
-      <h2>Why Us? </h2>
-      <div class="reasons">
-        <div class="reason">
-          <i class="fas fa-check-circle"></i>
-          <h3>Guarantee of a refund.</h3>
-          <p>We offer a wide range of high-quality movies and TV shows for your entertainment.</p>
+    <div class="container">
+        <h1>Shopping Cart Summary</h1>
+        
+        <div class="summary">
+            <div class="summary-item">
+                <span>Chosen Plan:</span>
+                <span>Plan XYZ</span>
+            </div>
+            <div class="summary-item">
+                <span>Product 1</span>
+                <span>$19.99</span>
+            </div>
+            <div class="summary-item">
+                <span>Product 2</span>
+                <span>$29.99</span>
+            </div>
+            <div class="summary-item">
+                <span>Product 3</span>
+                <span>$9.99</span>
+            </div>
         </div>
-        <div class="reason">
-          <i class="fas fa-check-circle"></i>
-          <h3>Experience immediate activation!</h3>
-          <p>Enjoy our service on multiple devices, anytime, and anywhere with our seamless streaming experience.</p>
+        
+        <div class="delivery-methods">
+            <p><strong>DELIVERY METHODS</strong></p>
+            <p>This Order contains digital product(s). You will receive all the details on your email and WhatsApp within minutes after the purchase.</p>
         </div>
-        <div class="reason">
-          <i class="fas fa-check-circle"></i>
-          <h3>Affordable Pricing</h3>
-          <p>We provide competitive pricing plans that fit your budget without compromising on content.</p>
-        </div>
-        <div class="reason">
-          <i class="fas fa-check-circle"></i>
-          <h3>24/7 Fast Support available</h3>
-          <p>Our platform is designed with a user-friendly interface, making it easy to navigate and discover new content.</p>
-        </div>
-        <div class="reason">
-          <i class="fas fa-check-circle"></i>
-          <h3>Access over 54,000 channels worldwide</h3>
-          <p>We offer personalized recommendations based on your viewing history and preferences to enhance your experience.</p>
-        </div>
-        <div class="reason">
-          <i class="fas fa-check-circle"></i>
-          <h3>Quality Content</h3>
-          <p>Download your favorite movies and TV shows to watch offline, perfect for long trips or when you're on the go.</p>
-        </div>
-      </div>
-    </section>
-  </div>
-
-
-
-    <section id="our-plans">
-      <h2>Our Plans</h2>
-      <div class="subscription-plans">
-        <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>WebTVPrime</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <style>
-    /* CSS styles for your website */
-    
-    /* ... (existing CSS styles) ... */
-  </style>
-
-
-<body>
-  <!-- ... (existing HTML code) ... -->
-
-  <div class="subscription-card">
-    <h3>Basic Plan</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    <a href="payment-gateway1-link" class="subscribe-btn">Buy Now</a>
-  </div>
-  
-  <div class="subscription-card">
-    <h3>Standard Plan</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    <a href="payment-gateway2-link" class="subscribe-btn">Buy Now</a>
-  </div>
-  
-  <div class="subscription-card">
-    <h3>Premium Plan</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    <a href="payment-gateway3-link" class="subscribe-btn">Buy Now</a>
-  </div>
-  
-  <div class="subscription-card">
-    <h3>Ultra Plan</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    <a href="payment-gateway4-link" class="subscribe-btn">Buy Now</a>
-  </div>
-  
-  <div class="subscription-card">
-    <h3>Free Trial</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    <a href="payment-gateway5-link" class="subscribe-btn">Buy Now</a>
-  </div>
-
-  <!-- ... (existing JavaScript code) ... -->
-</body>
-</html>
-
-
-      </div>
-    </section>
-
-    <section class="usage-guide">
-  <h2>How to Use Our Services</h2>
-  <div class="usage-guide-steps">
-    <div class="usage-guide-step">
-      <span class="step-icon">1</span>
-      <p>Step 1: Search for your favorite shows and movies.</p>
-    </div>
-    <div class="usage-guide-step">
-      <span class="step-icon">2</span>
-      <p>Step 2: Click to start watching.</p>
-    </div>
-    <div class="usage-guide-step">
-      <span class="step-icon">3</span>
-      <p>Step 3: Enjoy your favorite content hassle-free.</p>
-    </div>
-  </div>
-</section>
-
-  
-  
-   <style>
-    /* CSS styles for your website */
-
-    /* ... (existing CSS styles) ... */
-
-    .customer-reviews {
-      background-color: #f9f9f9;
-      padding: 40px 0;
-    }
-
-    .customer-review {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      max-width: 400px;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    .customer-review img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      margin-bottom: 20px;
-    }
-
-    .customer-review h3 {
-      margin-bottom: 10px;
-    }
-
-    .customer-review p {
-      font-style: italic;
-      color: #888;
-    }
-
-    .review-form {
-      max-width: 400px;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    .review-form label {
-      display: block;
-      margin-bottom: 10px;
-    }
-
-    .review-form input,
-    .review-form textarea {
-      width: 100%;
-      padding: 5px;
-      margin-bottom: 20px;
-    }
-
-    .review-form button {
-      background-color: #3498db;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      cursor: pointer;
-    }
-  </style>
-  <section class="customer-reviews">
-    <h2>Customer Reviews</h2>
-   <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v11.0" nonce="YOUR_NONCE_VALUE"></script>
-
-<div class="fb-comments" data-href="https://yassineallach.github.io/WebTVPrime/" data-width="500" data-numposts="5"></div>
-
-    <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v11.0" nonce="YOUR_NONCE_VALUE"></script>
-
-
-
-
-    
-  </section> 
-
-  
-
-  
-
-  </main>
-
-      <footer>
-          
-     <div class="social-media">
-    <h3>Follow us</h3>
-  <div class="social-media-icons">
-    <a href="#"><i class="fab fa-facebook"></i></a>
-    <a href="#"><i class="fab fa-twitter"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#"><i class="fab fa-whatsapp"></i></a>
-  </div>
-  </div>
-  <div class="payment-methods">
-    <i class="fab fa-cc-visa"></i>
-    <i class="fab fa-cc-mastercard"></i>
-    <i class="fab fa-cc-amex"></i>
-    <i class="fab fa-cc-paypal"></i>
-  </div>
-  <div class="service-supports">
-    <h3>Our Service Supports</h3>
-  <div class="device-icons">
-  <i class="fab fa-android device-icon"></i>
-  <i class="fab fa-apple device-icon"></i>
-  <i class="fas fa-tv device-icon"></i>
-  <!-- Add more device icons here as needed -->
-</div>
-</div>
-
-
-  <p>&copy; 2023 WebTVPrime. All rights reserved.</p>
-    </footer>
-   
-
-
-
-<script>
-    // Slideshow script
-    let slideIndex = 0;
-    const slides = document.getElementsByClassName('slideshow-slide');
-
-    function showSlides() {
-      for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = 'none';
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {
-        slideIndex = 1;
-      }
-      slides[slideIndex - 1].style.display = 'block';
-      setTimeout(showSlides, 5000); // Change slide every 2 seconds
-    }
-
-    showSlides();
+        
+        <div class="payment-method">
             
- 
+        </div>
+        
+
+    </div>
+    <div id="paypal-button-container"></div>
+
+    <script>
+    paypal.Buttons({
+  createOrder: function(data, actions) {
+    // Set up the transaction details and return the order ID
+    return actions.order.create({
+      purchase_units: [
+        {
+          amount: {
+            value: '10.00' // Set the transaction amount
+          }
+        }
+      ]
+    });
+  },
+  onApprove: function(data, actions) {
+    // Capture the payment when the customer approves the transaction
+    return actions.order.capture().then(function(details) {
+      // Handle the successful payment
+      console.log('Payment completed: ' + details.payer.name.given_name);
+    });
+  }
+}).render('#paypal-button-container');
 
 </script>
 </body>
