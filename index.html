@@ -45,14 +45,14 @@
     
   
     body { 
-        margin-top: 70px;
+      margin-top: 0px;
       text-transform: uppercase;
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
       color: #333333;
       
-  background: #F8F8F8);
+      background: #F8F8F8);
 
 
       background-image: url('background.jpg');
@@ -61,37 +61,8 @@
       background-size: cover;
     }
 
-    /* Header styles */
-    header {
-  background-color: #f8f8f8;
-  padding: 10px;
-}
+    
 
-.logo img {
-  height: 50px;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-nav ul li a {
-  color: #333;
-  text-decoration: none;
-  padding: 5px;
-}
-
-nav ul li a:hover {
-  color: #000;
-  background-color: #ddd;
-}
 
     
   
@@ -108,9 +79,10 @@ nav ul li a:hover {
 
 
     main {
+    
       text-align: center;
       
-      margin-top: 30px; /* Adjust the margin-top value to create desired spacing */ pad4ding: 0px;
+      margin-top: 0px; /* Adjust the margin-top value to create desired spacing */ pad4ding: 0px;
       
     }
 
@@ -127,9 +99,9 @@ nav ul li a:hover {
 
 
     .subscription-card {
-  width: 200px;
-  height: 700px; /* Set a fixed height for all cards */
-  background-color: #fff;
+  width: 265px;
+  height: 500px; /* Set a fixed height for all cards */
+  background-color: ;
   border-radius: 5px;
   padding: 20px;
   margin: 10px;
@@ -141,7 +113,7 @@ nav ul li a:hover {
 
 
     .subscription-card h3 {
-      color: #007BFF; /* Dark Blue */
+      color: #FE4A49; /* Dark Blue */
       margin-top: 0;
     }
 
@@ -151,7 +123,7 @@ nav ul li a:hover {
 
     .subscription-card .subscribe-btn {
       display: block;
-      background-color: #007BFF; /* Dark Blue */
+      background-color: #001730; /* Dark Blue */
       color: #fff;
       text-align: center;
       padding: 10px 20px;
@@ -169,89 +141,7 @@ nav ul li a:hover {
   flex-direction: column;
   align-items: center;
 }
-    .why-us {
-  
-}
-
-.why-us h2 {
-  font-size: 30px;
-  margin-bottom: 30px;
-}  
-
-
-.reasons {
-  display: flex;
-  justify-content: space-around;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  justify-items: center;
-}
-
-.reason {
-  max-width: 300px;
-}
-
-.reason i {
-  font-size: 48px;
-  color: #333;
-  margin-bottom: 20px;
-
-@media screen and (max-width: 600px) {
-  /* Styles for small screens */
-  .reason i {
-  font-size: 28px;
-  color: #333;
-  margin-bottom: 10px;
-
-}
-
-
-  
-
-
-
-.reason h3 {
-  font-size: 24px;
-  margin-bottom: 10p
-@media screen and (max-width: 600px) {
-  /* Styles for small screens */
-  .reason h3 {
-  font-size: 12px;
-  margin-bottom: 10px;
-
-}
-  x;}
-
-
-.reason p {
-  font-size: 16px;
-  color: #
-@media screen and (max-width: 600px) {
-  /* Styles for small screens */
- .reason p {
-  font-size: 8px;
-  color: #777;  777;7;
-       
-       @media screen and (max-width: 767px) {
-  /* Styles for small screens */
-  .reasons {
-    display: block;
-  }
-}
-
-
-@media screen and (min-width: 1024px) {
-  /* Styles for large screens */
-  .reasons {
-    display: grid;
-    grid-template-columns: repea3(3, 1fr);
-    gap: 20px;
-  }
-}
-
-/* Add additional media queries as needed for specific breakpoints */
-
+    
 
 
     /* Usage guide styles */
@@ -309,6 +199,9 @@ nav ul li a:hover {
   color: #fff;
   padding: 20px;
   text-align: center;
+   Height: 10vw;
+   font-size: 1vw;
+  
 }
 
 .social-media-icons {
@@ -324,79 +217,225 @@ nav ul li a:hover {
 .payment-methods {
   display: flex;
   align-items: center;
+  
+  
 }
 
 .payment-methods i {
   color: #fff;
-  margin-right: 10px;
+  justify-content: space-between;
+  
 }
-    /* Media Queries */
+@media (max-width: 768px) {
+    footer {
+    Height: 10vh;
+    }
     
-    /* Styles for small screens (up to 600px) */
-    @media (max-width: 600px) {
-      /* Adjust the styles for small screens */
-      body {
-        font-size: 14px;
-      }
-
-      /* Example: Reduce font size */
-    }
-
-    /* Styles for medium screens (601px to 900px) */
-    @media (min-width: 601px) and (max-width: 900px) {
-      /* Adjust the styles for medium screens */
-      body {
-        font-size: 16px;
-      }
-
-      /* Example: Increase font size */
-    }
-
-    /* Styles for large screens (901px and above) */
-    @media (min-width: 901px) {
-      /* Adjust the styles for large screens */
-      body {
-        font-size: 18px;
-      }
-
-      /* Example: Further increase font size */
-    }
- 
-
+} 
   </style>
 </head>
 
 <body>
-    <header>
-  <div class="logo">
-    <img src="logo.png" alt="Website Logo">
+   <header class="header">
+  <div class="header-overlay">
+    <img src="logo.png" alt="Website Logo" class="logo-img">
   </div>
-  <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li>
-        <select id="contact-method" onchange="handleContactSelection()">
-          <option value="">Contact Us</option>
-          <option value="whatsapp">WhatsApp</option>
-          <option value="email">Email</option>
-        </select>
-      </li>
-      <li><a href="#">subscribe now</a></li>
-    </ul>
-  </nav>
+ <nav>
+  <input type="checkbox" id="menu-toggle">
+  <label for="menu-toggle" class="menu-btn">&#9776;</label>
+  <ul class="nav-list"></div>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
 
- <script>
-  function handleContactSelection() {
-    var contactMethod = document.getElementById("contact-method").value;
+<style>
+    /* Header styles */
+    header {
+    display: flex;
+  justify-content: flex-end; /* Align items to the right */
+  background-color: #f8f8f8;
+  
+  
+  height: 10vh;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.1);
+  
+}
+  nav {
+    background-color: #0;
+    width: 10vh;
+    font-size: 2vh;
+    
+    z-index: 5;
+  }
 
-    if (contactMethod === "whatsapp") {
-      window.location.href = "whatsapp://send?phone=YOUR_PHONE_NUMBER";
-    } else if (contactMethod === "email") {
-      window.location.href = "mailto:your-email@example.com";
+  .nav-list {
+    list-style: none;
+    
+    margin: 0vw;
+    padding: 0;
+    display: flex;
+    
+    height: 25vh;
+    
+  }
+
+  .nav-list li {
+    margin: 0 2vw;
+  }
+
+  .nav-list li a {
+    color: #001730;
+    text-decoration: none;
+    
+  }
+
+  .nav-list li a:hover {
+    color: #ff0034;
+  }
+
+  /* Media query for small devices */
+  @media (max-width: 768px) {
+    .nav-list {
+      display: none; /* Hide the default list on small devices */
+      
+    }
+
+    /* Show the dropdown menu when the menu-toggle checkbox is checked */
+    #menu-toggle:checked ~ .nav-list {
+      display: flex;
+      flex-direction: column;
+      
+      background-color: #ffffffdc;
+      position: absolute;
+      top: 100%;
+      left: 70vw;
+      width: 30vw;
+      padding: 0px 0;
+      box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.5);
+      
+    }
+
+    /* Style the dropdown menu items */
+    #menu-toggle:checked ~ .nav-list li {
+      
+       font-size: 5vh;
+    }
+
+    /* Style the dropdown menu links */
+    #menu-toggle:checked ~ .nav-list li a {
+      color: #2c2c2c;
+      font-size: 2.5vh;
+      
+      
+    }
+    #menu-toggle:checked ~ .nav-list li a:hover {
+    color: #158cff;
+    
+  }
+
+    /* Hide the checkbox and menu button for large screens */
+    #menu-toggle {
+      display: none;
+    }
+
+    .menu-btn {
+     align-items: center;
+    justify-content: center;
+      display: flex !important;
+      font-size: 4.5vh;
+      cursor: pointer;
+      color: #2c2c2c;
+      margin-top: 0vh;
+      height: 10vh;
     }
   }
+  
+  /* Additional styles for large screens */
+  @media (min-width: 769px) {
+  header {
+    display: flex;
+    justify-content: center;
+  align-items: center;
+  justify-content: flex-end; /* Align items to the right */
+  background-color: #f8f8f8;
+  
+  
+  height: 6vh;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.1);
+}
+    #menu-toggle {
+      display: none; /* Hide the checkbox for large screens */
+    }
+
+    .menu-btn {
+      display: none; /* Hide the menu button for large screens */
+    }
+
+    .nav-list {
+      display: flex !important; /* Show the default list for large screens */
+     align-items: center;
+  justify-content: flex-end; /* Align items to the right */
+  
+      height: 10vh;
+      margin-right: 1vw;
+      
+    }
+    nav {
+    
+    width: 50vw;
+  }
+</style>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var navLinks = document.querySelectorAll('.nav-list li a');
+
+    for (var i = 0; i < navLinks.length; i++) {
+      navLinks[i].addEventListener('click', function() {
+        document.getElementById('menu-toggle').checked = false;
+      });
+    }
+  });
 </script>
+ <style>
+         .header-overlay {
+  position: absolute;
+  
+  top: 0;
+  left: 0;
+   width: 60vw;
+ height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   
+  
+  z-index: 2;
+}
+@media (min-width: 600px) {
+      .header-overlay {
+       height: 6vh;
+       z-index: 5;
+      }
+
+
+.logo-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+         
+
+     </style>
+
 
 
 </header>
@@ -405,196 +444,205 @@ nav ul li a:hover {
   
 
   <main>
-   
-     <section class="slideshow-section">
-  <div class="slideshow">
-    <div class="slideshow-slide">
-      <img src="file:///storage/emulated/0/Download/Daco_4772733.png" alt="Slide 1">
-      <div class="overlay">
-        <div class="overlay-content">
-          <h2>Special Offer</h2>
-          <p>Get 50% off your first month subscription</p>
-          <a href="#" class="btn">Subscribe Now</a>
-        </div>
-      </div>
+      <section>
+  <div class="slideshow-container">
+    <div class="slide">
+      <img src="file:///storage/emulated/0/Download/pngwing.com%20(1).png" alt="Slide 1">
     </div>
-    <div class="slideshow-slide">
-      <img src="image2.jpg" alt="Slide 2">
-      <div class="overlay">
-        <div class="overlay-content">
-          <h2>Special Offer</h2>
-          <p>Get 50% off your first month subscription</p>
-          <a href="#" class="btn">Subscribe Now</a>
-        </div>
-      </div>
+    <div class="slide">
+      <img src="file:///storage/emulated/0/Download/Daco_4772733.png" alt="Slide 2">
     </div>
-    <div class="slideshow-slide">
+    <div class="slide">
       <img src="image3.jpg" alt="Slide 3">
-      <div class="overlay">
-        <div class="overlay-content">
-          <h2>Special Offer</h2>
-          <p>Get 50% off your first month subscription</p>
-          <a href="#" class="btn">Subscribe Now</a>
-        </div>
-      </div>
+    </div>
+    <div class="overlay">
+      <h1>Unleash the World of Entertainment: Explore Limitless Channels with WebTVPrpe</h1>
+      <a href="payment-gateway5-link" class="subscribe-obtn">Subscribe now</a>
     </div>
   </div>
 </section>
 
 
-
-  <style>
-      .slideshow-section {
-      width: 100vw;
-      position: relative;
-  background-color: #f5f5f5;
-  padding: 0px;
-}
-
-.slideshow {
+<style>
+  .slideshow-container {
   position: relative;
   width: 100vw;
-  height: 100vw;
+  height: auto; /* Adjust the height as needed */
+  margin: 0;
   overflow: hidden;
-  
+ 
 }
 
-.slideshow-slide {
-  position: absolute;
-  top: 0;
-  left: 0;
+.slide {
+  display: none;
+}
+
+.slide img {
   width: 100vw;
-  he100vw; 100vw;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  height: 100%;
+  object-fit: cover;
 }
 
-.slideshow-slide.active {
-  opacity: 1;
+/* Optional: Add styles for navigation buttons */
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
 }
-          
 
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
-  width: 40%;
-  height: 100vw;
+  width: 60vw;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(0, 23, 48, 1) 10%, rgba(128, 152, 255, 0));
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.7);
-  opacity: 1;
-  transition: opacity 0.3s ease-in-out;
-  z-index: 2;
+  align-items: center;
+  z-index: 1;
 }
 
-.overlay-content {
-  text-align: center;
+.overlay h1 {
+  color: #ffffff;
+  font-size: 4vw;
+  margin-right:15vw;
+}
+
+.subscribe-obtn {
+  padding: 1vw 3vw;
+  font-size: 3.5vw;
+  background-color: #FF5500;
   color: #fff;
+  border: none;
+  border-radius: 2vw;
+  margin-right: 15vw;
 }
 
-.overlay-content h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
+
+
+</style>
+
+<script>
+  var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var slides = document.getElementsByClassName("slide");
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+  slides[slideIndex - 1].style.display = "block";
+  setTimeout(showSlides, 3500); // Change slide every 2 seconds
 }
 
-.overlay-content p {
-  font-size: 18px;
+
+
+</script>
+
+      
+  
+  
+<section class="why-us">
+    
+      <h2>Why WebTVPrime?</h2>
+  
+  <div class="card-section">
+  <div class="card">
+      <i class="fas fa-check-circle" <h3> Quality Content</h3></i>
+          
+          <p>Download your favorite movies and TV shows to watch offline, perfect for long trips or when you're on the go.</p></div>
+        <div class="card">
+     <i class="fas fa-check-circle" <h3> Guarantee of a refund.</h3></i>
+          
+          <p>We offer a wide range of high-quality movies and TV shows for your entertainment.</p></div>
+           <div class="card">
+     <i class="fas fa-check-circle" <h3> Experience immediate activation!</h3></i>
+          
+          <p>Enjoy our service on multiple devices, anytime, and anywhere with our seamless streaming experience.</p></div>
+          <div class="card">
+     <i class="fas fa-check-circle" <h3> Affordable Pricing!</h3></i>
+          
+          <p>We provide competitive pricing plans that fit your budget without compromising on content.</p></div>
+          <div class="card">
+     <i class="fas fa-check-circle" <h3> Fast Support available</h3></i>
+          
+          <p>Our platform is designed with a user-friendly interface, making it easy to navigate and discover new content.</p></div>
+          <div class="card">
+     <i class="fas fa-check-circle" <h3> Quality Content</h3></i>
+          
+          <p>Download your favorite movies and TV shows to watch offline, perfect for long trips or when you're on the go.</p></div>
+</div>
+
+  
+
+
+       
+      <style>
+       .why-us h2 {
+  font-size: 5vw;
+  margin-bottom: 0px;
+  background: rgba(254, 74, 73, 1);
+  color: #ffffff;
+  margin-top: 0vw;
+  width: 100vw;
+  position: relative;
+  left: 0vw;
+  
+}  
+
+
+
+
+
+  
+
+
+.card-section {
+    background: rgba(254, 74, 73, 1);
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100vw;
+  position: relative;
+  left: 0vw;
+  
+}
+
+.card {
+  width: 300px;
+  height: 200px;
+  color: #ffffff;
   margin-bottom: 20px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.overlay-content .btn {
-  display: inline-block;
-  background-color: #0d47a1;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.overlay-content .btn:hover {
-  background-color: #1565c0;
-}
-
-.slideshow-slide:hover + .overlay {
-  opacity: 1;
-}
-
-
-  </style>
-  <script>
-      const slides = document.querySelectorAll('.slideshow-slide');
-let currentSlide = 0;
-
-function showSlide(index) {
-  slides.forEach((slide) => {
-    slide.classList.remove('active');
-  });
-  slides[index].classList.add('active');
-}
-
-function nextSlide() {
-  currentSlide = (currentSlide + 1) % slides.length;
-  showSlide(currentSlide);
-}
-
-function previousSlide() {
-  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-  showSlide(currentSlide);
-}
-
-// Start the slideshow
-showSlide(currentSlide);
-
-// Automatically switch slides every 3 seconds
-setInterval(nextSlide, 3000);
-
-  </script>
-</section>
- 
-
-</section>
-     
-
-    <section class="why-us">
-      <h2>Why Us? </h2>
-      <div class="reasons">
-        <div class="reason">
-          <i class="fas fa-check-circle"></i>
-          <h3>Guarantee of a refund.</h3>
-          <p>We offer a wide range of high-quality movies and TV shows for your entertainment.</p>
-        </div>
-        <div class="reason">
-          <i class="fas fa-check-circle"></i>
-          <h3>Experience immediate activation!</h3>
-          <p>Enjoy our service on multiple devices, anytime, and anywhere with our seamless streaming experience.</p>
-        </div>
-        <div class="reason">
-          <i class="fas fa-check-circle"></i>
-          <h3>Affordable Pricing</h3>
-          <p>We provide competitive pricing plans that fit your budget without compromising on content.</p>
-        </div>
-        <div class="reason">
-          <i class="fas fa-check-circle"></i>
-          <h3>24/7 Fast Support available</h3>
-          <p>Our platform is designed with a user-friendly interface, making it easy to navigate and discover new content.</p>
-        </div>
-        <div class="reason">
-          <i class="fas fa-check-circle"></i>
-          <h3>Access over 54,000 channels worldwide</h3>
-          <p>We offer personalized recommendations based on your viewing history and preferences to enhance your experience.</p>
-        </div>
-        <div class="reason">
-          <i class="fas fa-check-circle"></i>
-          <h3>Quality Content</h3>
-          <p>Download your favorite movies and TV shows to watch offline, perfect for long trips or when you're on the go.</p>
-        </div>
-      </div>
+      </style>
+      
     </section>
-  </div>
-
 
 
     <section id="our-plans">
